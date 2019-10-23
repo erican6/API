@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+
+<html lang = "en-US">
+
+<head>
+
+<style>
+h4 {
+color: indianred;
+font-family: avenir;
+text-align: center;
+}
+h5 {
+color: orange;
+font-family: avenir;
+text-align: center;
+text-transform: capitalize;
+}
+h6 {
+color: orange;
+font-family: avenir;
+text-align: center;
+}
+th:hover {
+text-decoration:underline;
+}
+th, td {
+padding: 10px;
+text-align: center;
+}
+a:link, a:active, a:visited {
+color: orange; 
+background-color: transparent; 
+text-decoration: none;
+}
+a:hover {
+color: orangered;
+background-color: beige;
+text-decoration: underline;
+}
+table {
+width:100%
+border: 1px solid black;
+border: collapse;
+}
+th,td {
+font-family: avenir;
+text-align: center;
+border: 1px solid black;
+border: collapse;
+padding: 10px
+}
+
+</style>  
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<title>COC Player Comparisons</title>
+
+</head>
+
+<body style="background-color:lightgrey,0.5;">
+
+<h4>Player Comparisons - Clash of Clans</h4>
+
+<div class="row">
+    <div class="col s12">
+      <ul class="tabs">
+          <li class="tab col s6"><a class="active" href="#info"><h5>Information</h5></a></li>
+          <li class="tab col s6"><a href="#details"><h5>Extra Details</h5></a></li>
+      </ul>
+    </div>
+    <div id="info" class="col s12" style="text-align: center">
+    <h6>Here are the basic statistics comparisons for your Clash of Clans users.<br><br>You can click on the headers to sort by aplha order or numerical order.<br><br>You can click on the clan logo for information on the clan.</h6>
+    </div>
+    <div id="details" class="col s12" style="text-align: center">
+    <h6><a href=https://developer.clashofclans.com/#/login target = _blank>Link To API Used</a><br>
+    Email (It Actually Is): bob.main2132@gmail.com Password: clashofclans6<br><br>Project is written in python and HTML with the use of framework <a href=https://materializecss.com target = _blank>"CSS Materialize"</a></h6>
+    </div>
+</div> 
+
+<hr>    
+
+<table id = 'myTable'; style = 'width:100%'; class = "highlight"; class = "responsive-table">
+   <tr>
+   <th onclick = 'sortTable(0)'>Account Name</th>
+   <th onclick = 'sortTable(1)'>Townhall Level</th> 
+   <th onclick = 'sortTable(2)'>Builderhall Level</th>
+   <th onclick = 'sortTable(3)'>EXP Level</th>
+   <th onclick = 'sortTable(4)'>League</th>  
+   <th onclick = 'sortTable(5)'>Trophies</th>
+   <th onclick = 'sortTable(6)'>Warstars</th>
+   <th onclick = 'sortTable(7)'>Total Donations</th>
+   <th onclick = 'sortTable(8)'>Clan</th>
+ </tr>   
+        <tr><td>bgood</td><td>9</td><td>5</td><td>106</td><td>Gold League I<br><img src=https://api-assets.clashofclans.com/leagues/36/CorhMY9ZmQvqXTZ4VYVuUgPNGSHsO0cEXEL5WYRmB2Y.png style = 'width:50px;height:50px' title = 'League Icon'> </img></td><td>1819</td><td>238</td><td>11129</td><td>Crooked Lines<br><a href='https://clashofclans.com/clans/search/#clanTag=CQQ92R0C'target = '_blank'><img src ='https://api-assets.clashofclans.com/badges/70/IKDSZuk00yPL41G98qdDaBIsEhnnTqluz0ZamPIGEgk.png' style='width:65px;height:65px' title='Click For More Info'></a></td></tr><tr><td>Rkchan06</td><td>10</td><td>6</td><td>124</td><td>Master League II<br><img src=https://api-assets.clashofclans.com/leagues/36/4wtS1stWZQ-1VJ5HaCuDPfdhTWjeZs_jPar_YPzK6Lg.png style = 'width:50px;height:50px' title = 'League Icon'> </img></td><td>2791</td><td>612</td><td>14348</td><td>Crooked Lines<br><a href='https://clashofclans.com/clans/search/#clanTag=CQQ92R0C'target = '_blank'><img src ='https://api-assets.clashofclans.com/badges/70/IKDSZuk00yPL41G98qdDaBIsEhnnTqluz0ZamPIGEgk.png' style='width:65px;height:65px' title='Click For More Info'></a></td></tr><tr><td>Daryan</td><td>9</td><td>3</td><td>98</td><td>No League<br><img src=https://vignette.wikia.nocookie.net/clashofclans/images/c/c0/Unranked_League.png/revision/latest/scale-to-width-down/92?cb=20171003011534 style = 'width:50px;height:50px' title = 'League Icon'> </img></td><td>1822</td><td>87</td><td>10712</td><td>No Clan<br><a href='https://clashofclans.com/clans/search/#clanTag='target = '_blank'><img src ='https://www.sccpre.cat/mypng/full/34-345385_logo-coc-png-clash-of-clans-png.png' style='width:65px;height:65px' title='Click For More Info'></a></td></tr><tr><td>KusKus</td><td>11</td><td>6</td><td>127</td><td>Master League I<br><img src=https://api-assets.clashofclans.com/leagues/36/olUfFb1wscIH8hqECAdWbdB6jPm9R8zzEyHIzyBgRXc.png style = 'width:50px;height:50px' title = 'League Icon'> </img></td><td>2963</td><td>261</td><td>20399</td><td>Crooked Lines<br><a href='https://clashofclans.com/clans/search/#clanTag=CQQ92R0C'target = '_blank'><img src ='https://api-assets.clashofclans.com/badges/70/IKDSZuk00yPL41G98qdDaBIsEhnnTqluz0ZamPIGEgk.png' style='width:65px;height:65px' title='Click For More Info'></a></td></tr><tr><td>tofu</td><td>7</td><td>4</td><td>52</td><td>Silver League II<br><img src=https://api-assets.clashofclans.com/leagues/36/8OhXcwDJkenBH2kPH73eXftFOpHHRF-b32n0yrTqC44.png style = 'width:50px;height:50px' title = 'League Icon'> </img></td><td>1085</td><td>3</td><td>0</td><td>No Clan<br><a href='https://clashofclans.com/clans/search/#clanTag='target = '_blank'><img src ='https://www.sccpre.cat/mypng/full/34-345385_logo-coc-png-clash-of-clans-png.png' style='width:65px;height:65px' title='Click For More Info'></a></td></tr></table><script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+<script>$(document).ready(function(){$('.tabs').tabs();});</script>
+<script>function sortTable(n) {var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;table = document.getElementById('myTable');switching = true;dir = 'asc'; while (switching) {switching = false;rows = table.rows;for (i = 1; i < (rows.length - 1); i++) {shouldSwitch = false;x = rows[i].getElementsByTagName('TD')[n];y = rows[i + 1].getElementsByTagName('TD')[n];if (dir == 'asc') {if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {shouldSwitch= true;break;}} else if (dir == 'desc') {if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {shouldSwitch = true;break;}}}if (shouldSwitch) {rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);switching = true;switchcount ++;} else {if (switchcount == 0 && dir == 'asc') {dir = 'desc';switching = true;}}}}</script></body></html>
