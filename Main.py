@@ -62,7 +62,7 @@ def compare():
             success()
 
         #Now asking for inputs of Payer Tags
-        tk.Label(window,text="Running for {} users...".format(var.get()),font=('times new roman', 13, 'italic'),fg='black').place(x=170, y=150)
+        tk.Label(window,text="Running for {} users... \nYou can find the player tag in the account profile.".format(var.get()),font=('times new roman', 13, 'italic'),fg='black').place(x=107, y=145)
         tk.Label(window,text="Input Player Tags!",font=('times new roman', 16, 'bold'),fg='orangered').place(x=160,y=185)
 
         #Using the previously set variable to get how many accounts are being compared and thus how many entry boxes must be made
