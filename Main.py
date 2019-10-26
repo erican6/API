@@ -5,7 +5,8 @@ from os import path
 import sys
 import tkinter.messagebox as tkm
 
-#Authorisation
+#Authorisation THIS IS FOR ERIC ONLY. YOU CAN DELETE THE AUTHORIZATIONS BELOW AND INSERT YOUR OWN IN THE FORMAT GIVEN ON THE WEB
+
 location = 2
 if location == 1: #Home
     headers = {
