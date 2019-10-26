@@ -3,6 +3,7 @@ import requests
 import webbrowser
 from os import path
 import sys
+import tkinter.messagebox as tkm
 
 #Authorisation
 location = 2
@@ -54,8 +55,9 @@ def compare():
 
                 #Error checking.. if the response code is different, results in default input
                 if response.status_code != 200:
-                    response = requests.get("https://api.clashofclans.com/v1/players/%23YVOYV82J", headers=headers)
-
+                    tkm.showinfo("Alert Message", "ERROR with given player tag...\nMake sure that there is no # in front of tags,\nMake sure the tag is valid,\nAnd make sure all the boxes are filled!\nThe code will now quit:)")
+                    sys.exit()
+                
                 get.get_user(response)
 
             #Calling on def success
@@ -125,7 +127,8 @@ def depth():
         response = requests.get("https://api.clashofclans.com/v1/players/%23" + player_tag, headers=headers)
 
         if response.status_code != 200:
-            response = requests.get("https://api.clashofclans.com/v1/players/%23YVOYV82J", headers=headers)
+            tkm.showinfo("Alert Message", "ERROR with given player tag...\nMake sure that there is no # in front of tags,\nMake sure the tag is valid,\nAnd make sure all the boxes are filled!\nThe code will now quit:)")
+            sys.exit()
 
         details.get_details(response)
 
